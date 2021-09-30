@@ -27,7 +27,13 @@ document.addEventListener("DOMContentLoaded", function(){
     });
     sharebutton.addEventListener("click", function sharefunction()
     {
-        a.setAttribute("href","https://twitter.com/intent/tweet?hashtags=JokesToTheRescue&text=" + joketitle.innerText + " " + jokebody.innerText + ".");
+        if(index<2){
+            index=0;
+        }
+        else{
+            index=index-2;;
+        }
+        getJoke();
     });
     nextbutton.addEventListener("click", function nextjoke(){
         getJoke();
