@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOKES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="joke-box" id="jokebox">
+        <button class="darkmode"><img src="sun.png" alt="sun" class="sun"><img src="moon.png" alt="moon" class="moon"> <!--onclick:myFunction()-->
+        <P id="turn">DARK</P>
+        </button> 
+            <div class="joke">
+                        <div id="title">
+                            <br><br>JOKES TO THE RESCUE
+                        </div> 
+                        <p><br></p>
+                        <div id="body">
+                            <!-- let's get started -->
+                        </div>  
+            </div>
+            <div class="mobile">
+                <div class="buttons">
+                    <div class="share">
+                        <button class="btn" id="shareontwitter" type="button"> <!--onclick: sharefunction()--> 
+                            <a href="" target="_blank" id="tweet_joke"> 
+                                <i class="fab fa-twitter"></i>
+                                <p class="tweet">TWEET</p> 
+                                <p class="hashtag">#</p>
+                            </a>
+                        </button>
+                        <!-- </a> -->
+                    </div> <!--share-->
+                    <div class="start">
+                        <button class="btn" id="startbutton" type="button"> <!--onclick: startfunction()--> 
+                            <p class="starttext" id="starttext">START</p>
+                            <img src="rocket.png" alt="rocket" class="rocketimage">
+                            <!-- <p class="start" id="rocket">🚀</p> -->
+                        </button>
+                    </div><!--start-->
+                    <div class="new_joke">
+                        <button class="btn" id="new-joke"> <!--onclick: getJoke()--> 
+                            <p class="next">NEXT</p>
+                            <p class="plusone">+1</p>
+                        </button>
+                    </div>  <!--new joke-->
+                </div>  <!--buttons-->
+            </div>  <!--mobiles-->
+        </div>  <!--jokebox-->
+    </div>  <!--container-->
+<script src="popup.js"></script>
+</body>
+</html>
