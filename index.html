@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>microtale</title>
+    <title>JOKES</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="joke-box" id="jokebox">
-        <button class="darkmode"><img src="sun.png" alt="sun" class="sun"><img src="moon.png" alt="moon" class="moon"> <!--onclick:myFunction()-->
-        <P id="turn">DARK</P>
-        </button> 
+            <div class="top-buttons">
+                <button class="status-button">
+                    <p id="status-text"></p>    
+                <button class="darkmode"><img src="sun.png" alt="sun" class="sun"><img src="moon.png" alt="moon" class="moon"> <!--onclick:myFunction()-->
+                    <P id="turn">DARK</P>
+                </button> 
+            </div>
             <div class="joke">
                         <div id="title">
                             <br><br>wish to read some microtales?
@@ -29,11 +33,8 @@
                 <div class="buttons">
                     <div class="share">
                         <button class="btn" id="shareontwitter" type="button"> <!--onclick: sharefunction()--> 
-                            
-                                <i class="fab fa-twitter"></i>
-                                <p class="tweet">BACK</p> 
-                                <p class="hashtag">-1</p>
-
+                            <p class="tweet">BACK</p> 
+                            <p class="hashtag">-1</p>
                         </button>
                         <!-- </a> -->
                     </div> <!--share-->
@@ -44,6 +45,11 @@
                             <!-- <p class="start" id="rocket">🚀</p> -->
                         </button>
                     </div><!--start-->
+                    <div class="jump-button">
+                        <button class="btn" id="jump"> <!--onclick: getJoke()--> 
+                            <input type="text" class="jump" placeholder="JUMP">
+                        </button>
+                    </div>  <!--jump-->
                     <div class="new_joke">
                         <button class="btn" id="new-joke"> <!--onclick: getJoke()--> 
                             <p class="next">NEXT</p>
