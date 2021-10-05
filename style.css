@@ -281,6 +281,15 @@
   .no .status-button{
     background-color: #c5183b;
   }
+  .top .status-button{
+    background-color: rgb(17, 51, 122);
+    color: white;
+  }
+  .win .status-button{
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 50px rgba(218, 165, 32, 0.521);
+  }
   /*DARK MODE*/
   
   .darkmode{
